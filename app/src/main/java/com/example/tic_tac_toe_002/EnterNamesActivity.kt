@@ -3,6 +3,7 @@ package com.example.tic_tac_toe_002
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.activity.enableEdgeToEdge
 import com.example.tic_tac_toe_002.databinding.ActivityEnterNamesBinding
 
 class EnterNamesActivity : AppCompatActivity() {
@@ -11,6 +12,7 @@ class EnterNamesActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
         binding = ActivityEnterNamesBinding.inflate(layoutInflater)
         setContentView(binding.root)
 

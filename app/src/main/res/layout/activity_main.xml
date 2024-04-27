@@ -5,7 +5,6 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="16dp"
     android:background="#D2BDE6"
     android:gravity="center"
     android:orientation="vertical"
@@ -13,8 +12,9 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="207dp"
-        android:layout_height="476dp"
+        android:layout_width="212dp"
+        android:layout_height="368dp"
+        android:layout_marginBottom="50dp"
         app:srcCompat="@drawable/tic_tac_toe" />
 
     <ImageView

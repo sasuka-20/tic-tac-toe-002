@@ -37,9 +37,12 @@ class GameActivity : AppCompatActivity(), View.OnClickListener {
         binding.btn7.setOnClickListener(this)
         binding.btn8.setOnClickListener(this)
 
-        // Set OnClickListener for the "Start game" button
+        binding.OBtn.text = "O"
+        binding.XBtn.text = "X"
+
         binding.startGameBtn.setOnClickListener {
             startGame()
+            binding.startGameBtn.visibility = View.INVISIBLE
         }
 
         binding.undoMoveBtn.setOnClickListener {
@@ -192,6 +195,7 @@ class GameActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun showWinnerPopup(message: String, winner: String) {
+        binding.startGameBtn.visibility = View.VISIBLE
         val winnerName = if (winner.isNotEmpty()) {
             if (winner == "X") playerXName else playerOName
         } else {

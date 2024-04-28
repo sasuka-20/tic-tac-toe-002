@@ -1,5 +1,8 @@
 <resources>
-    <string name="app_name">tic-tac-toe-002</string>
+    <string name="app_name">Tic Tac Toe</string>
     <string name="nameX">Name of Player X</string>
     <string name="nameO">Name of Player O</string>
+    <string name="settings_txt">Settings</string>
+    <string name="music_txt">Music</string>
+    <string name="sounds_txt">Sound</string>
 </resources>
